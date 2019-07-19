@@ -1,0 +1,54 @@
+{
+  "$schema": "https://raw.githubusercontent.com/BohemianCoding/SketchAPI/develop/docs/sketch-plugin-manifest-schema.json",
+  "icon": "icon.png",
+  "commands": [
+    {
+      "name": "✨ Clean Cat (Reset)",
+      "identifier": "truncat.reset",
+      "handler": "resetSettings",
+      "script": "./my-command.js",
+      "shortcut": "control shift /"
+    },
+    {
+      "name": "Truncate Head",
+      "identifier": "truncat.head",
+      "handler": "truncateHead",
+      "script": "./my-command.js",
+      "shortcut": "control ,"
+    },
+    {
+      "name": "Truncate Belly",
+      "identifier": "truncat.middle",
+      "handler": "truncateMiddle",
+      "script": "./my-command.js",
+      "shortcut": "control /"
+    },
+    {
+      "name": "Truncate Tail",
+      "identifier": "truncat.tail",
+      "handler": "truncateTail",
+      "script": "./my-command.js",
+      "shortcut": "control ."
+    },
+    {
+      "name": "selectionChanged",
+      "identifier": "mySelectionChanged",
+      "script": "./my-command.js",
+      "handlers": {
+        "actions": {
+          "SelectionChanged.begin" : "selectionChanged"
+        }
+      }
+    }
+  ],
+  "menu": {
+    "title": "Truncat 🐈...",
+    "items": [
+      "truncat.head",
+      "truncat.middle",
+      "truncat.tail",
+      "-",
+      "truncat.reset"
+    ]
+  }
+}
