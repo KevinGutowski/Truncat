@@ -1,4 +1,4 @@
-# truncat
+# Truncat 🐈...
 
 ## Installation
 
