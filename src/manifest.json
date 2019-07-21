@@ -4,6 +4,8 @@
   "commands": [
     {
       "name": "✨ Clean Cat (Reset)",
+      "description": "Revert back to the default paragraph styling with no truncation.",
+      "icon": "runner.clean.png",
       "identifier": "truncat.reset",
       "handler": "resetSettings",
       "script": "./my-command.js",
@@ -11,6 +13,8 @@
     },
     {
       "name": "Truncate Head",
+      "description": "Overflow text at the beginning of a line is indicated by an ellipsis (…) glyph.",
+      "icon": "runner.head.png",
       "identifier": "truncat.head",
       "handler": "truncateHead",
       "script": "./my-command.js",
@@ -18,6 +22,8 @@
     },
     {
       "name": "Truncate Belly",
+      "description": "Overflow text in the middle is indicated by an ellipsis (…) glyph.",
+      "icon": "runner.belly.png",
       "identifier": "truncat.middle",
       "handler": "truncateMiddle",
       "script": "./my-command.js",
@@ -25,6 +31,8 @@
     },
     {
       "name": "Truncate Tail",
+      "description": "Overflow text at the end of a line is indicated by an ellipsis (…) glyph.",
+      "icon": "runner.tail.png",
       "identifier": "truncat.tail",
       "handler": "truncateTail",
       "script": "./my-command.js",
