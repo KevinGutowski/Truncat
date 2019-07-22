@@ -9,7 +9,7 @@
       "identifier": "truncat.reset",
       "handler": "resetSettings",
       "script": "./my-command.js",
-      "shortcut": "control shift /"
+      "shortcut": "control ⌫"
     },
     {
       "name": "Truncate Head",
@@ -27,7 +27,7 @@
       "identifier": "truncat.middle",
       "handler": "truncateMiddle",
       "script": "./my-command.js",
-      "shortcut": "control /"
+      "shortcut": "control ."
     },
     {
       "name": "Truncate Tail",
@@ -36,7 +36,7 @@
       "identifier": "truncat.tail",
       "handler": "truncateTail",
       "script": "./my-command.js",
-      "shortcut": "control ."
+      "shortcut": "control /"
     },
     {
       "name": "selectionChanged",
