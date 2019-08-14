@@ -70,6 +70,8 @@ function truncate(textLayers, lineBreakType) {
         textLayers.forEach(textLayer => {
             let paragraphStyle = textLayer.sketchObject.paragraphStyle()
             paragraphStyle.setLineBreakMode(lineBreakType)
+            paragraphStyle.setAllowsDefaultTighteningForTruncation(false)
+            paragraphStyle.setTighteningFactorForTruncation(0)
             textLayer.sketchObject.addAttribute_value(NSParagraphStyleAttributeName, paragraphStyle)
         })
     }
